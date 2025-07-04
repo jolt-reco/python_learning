@@ -76,3 +76,28 @@ sum = 0
 for i in arr:
     sum += i
 print(sum)
+
+# ユーザーに1〜5の数字を入力してもらい、
+# それに応じて「運勢」を表示するプログラムを書いてみる
+num = int(input("1~5までの数字を入力:"))
+if num == 1:
+    print("大吉")
+elif num ==2:
+    print("中吉")
+elif num ==3:
+    print("小吉")
+elif num == 4:
+    print("吉")
+elif num == 5:
+    print("凶")
+else:
+    print("1~5までの数字を入力")
+
+# 九九表の作成
+for i in range(1,10):
+    for j in range(1,10):
+        print(i,"×",j,"=",i * j)
+# もう少しきれいに修正
+for i in range(1,10):
+    for j in range(1,10):
+        print(f"{i} × {j} = {i * j}")
