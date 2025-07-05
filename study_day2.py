@@ -101,3 +101,26 @@ for i in range(1,10):
 for i in range(1,10):
     for j in range(1,10):
         print(f"{i} × {j} = {i * j}")
+
+# 関数の定義
+# 文字列「hello world」を表示させる関数を定義してみる
+
+def say_hello():
+    print("hello world")
+
+say_hello()
+say_hello()
+say_hello()
+
+# add関数を使用
+def add(num1,num2):
+    return(num1 + num2)
+
+print(add(6,2))
+
+# 9，4，2の平均を出す関数を定義する
+def average(num1,num2,num3):
+    return((num1 + num2 + num3)/3)
+
+print(average(9,4,2))
+
